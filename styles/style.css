@@ -1,0 +1,38 @@
+.subtitulo {
+
+    font-size: 50px;
+
+    text-align: center;
+
+    background-color: rgb(255, 220, 176);
+
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.textocorto {
+
+    font-size: 30px;
+
+    text-align: center;
+
+    background-color: rgb(255, 223, 183);
+
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.cuerpo {
+    margin: 0;
+
+    background-color: bisque;
+}
+
+.fondo {
+
+    background-image: url("https://img.freepik.com/foto-gratis/vista-superior-comida-rapida-vegana-espacio-copiar_23-2148290801.jpg?semt=ais_hybrid&w=740&q=80");
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 500px;
+}
