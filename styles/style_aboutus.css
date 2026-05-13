@@ -6,47 +6,52 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f7f3ee;
+  background: #f6f1ea;
   color: #2b2b2b;
   line-height: 1.6;
 }
 
 header {
-  background-color: #3b1f14;
+  background: linear-gradient(135deg, #3b1f14, #5a2f1f);
   color: white;
-  padding: 24px 40px;
-  text-align: center;
+  padding: 25px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-  font-size: 32px;
-  margin-bottom: 16px;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 25px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
   font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: 0.2s ease;
 }
 
 nav a:hover {
-  color: #f4b400;
+  background-color: #f4b400;
+  color: #3b1f14;
 }
 
 .about {
   max-width: 900px;
   margin: 60px auto;
-  padding: 40px;
-  background-color: white;
-  border-radius: 16px;
+  padding: 45px 40px;
+  background-color: rgb(255, 246, 235);
+  border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   text-align: center;
 }
@@ -55,6 +60,7 @@ nav a:hover {
   font-size: 36px;
   color: #8b3e16;
   margin-bottom: 24px;
+  letter-spacing: 1px;
 }
 
 .about p {
@@ -64,29 +70,43 @@ nav a:hover {
 }
 
 .footer {
-  background-color: #222;
+  background-color: #2b1a12;
   color: white;
-  padding: 30px 40px;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .footer h3 {
   color: #f4b400;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
 }
 
 .footer p {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 6px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #f4b400;
 }
 
 .footer-section-1,
 .footer-section-3 {
   width: 45%;
 }
-/*DESKTOP*/
+
+/* DESKTOP */
 @media (min-width: 1200px) {
   .about {
     max-width: 1000px;
@@ -101,14 +121,15 @@ nav a:hover {
     font-size: 19px;
   }
 }
-/*TABLET*/
+
+/* TABLET */
 @media (max-width: 1024px) {
   header {
     padding: 22px 30px;
   }
 
   header h1 {
-    font-size: 30px;
+    font-size: 2rem;
   }
 
   nav ul {
@@ -116,9 +137,9 @@ nav a:hover {
   }
 
   .about {
-    max-width: 80%;
+    max-width: 85%;
     margin: 50px auto;
-    padding: 36px 32px;
+    padding: 38px 32px;
   }
 
   .about h1 {
@@ -130,10 +151,9 @@ nav a:hover {
   }
 
   .footer {
-    padding: 28px 30px;
+    padding: 35px 30px;
   }
 }
-
 
 /* CELULAR */
 @media (max-width: 768px) {
@@ -142,24 +162,26 @@ nav a:hover {
   }
 
   header h1 {
-    font-size: 26px;
-    margin-bottom: 14px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
   }
 
   nav ul {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
 
   nav a {
     font-size: 15px;
+    padding: 9px 16px;
   }
 
   .about {
     max-width: none;
     margin: 30px 16px;
-    padding: 28px 20px;
-    border-radius: 12px;
+    padding: 30px 20px;
+    border-radius: 15px;
   }
 
   .about h1 {
@@ -174,7 +196,8 @@ nav a:hover {
   .footer {
     flex-direction: column;
     text-align: center;
-    padding: 26px 20px;
+    padding: 30px 20px;
+    margin-top: 0;
   }
 
   .footer-section-1,
@@ -182,4 +205,3 @@ nav a:hover {
     width: 100%;
   }
 }
-
