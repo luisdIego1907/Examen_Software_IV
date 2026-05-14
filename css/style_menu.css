@@ -6,9 +6,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f6f1ea;
+    background-color: bisque;
     color: #2b2b2b;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -46,8 +49,9 @@ nav a:hover {
     color: #3b1f14;
 }
 
-.cuerpo {
-    background-color: bisque;
+.seleccionado{
+    background-color: #ffcb3c;
+    color: #614033;
 }
 
 .fondo {
@@ -56,6 +60,7 @@ nav a:hover {
     background-position: center;
     min-height: 500px;
     padding: 60px 30px;
+    flex: 1;
 }
 
 .contenedor-tarjetas {
@@ -97,7 +102,6 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin-top: 50px;
     flex-wrap: wrap;
 }
 
@@ -143,8 +147,8 @@ nav a:hover {
     }
 
     .fondo {
-        min-height: auto;
-        padding: 40px 20px;
+        flex: 1;
+        padding-bottom: 40px;
     }
 
     .contenedor-tarjetas {
