@@ -9,6 +9,9 @@ body {
   background: #f6f1ea;
   color: #2b2b2b;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -76,8 +79,8 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin-top: 50px;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .footer h3 {
@@ -101,61 +104,16 @@ nav a:hover {
   color: #f4b400;
 }
 
+.seleccionado{
+    background-color: #ffcb3c;
+    color: #614033;
+}
+
 .footer-section-1,
 .footer-section-3 {
-  width: 45%;
+  width: auto;
 }
 
-/* DESKTOP */
-@media (min-width: 1200px) {
-  .about {
-    max-width: 1000px;
-    padding: 50px;
-  }
-
-  .about h1 {
-    font-size: 40px;
-  }
-
-  .about p {
-    font-size: 19px;
-  }
-}
-
-/* TABLET */
-@media (max-width: 1024px) {
-  header {
-    padding: 22px 30px;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  nav ul {
-    gap: 18px;
-  }
-
-  .about {
-    max-width: 85%;
-    margin: 50px auto;
-    padding: 38px 32px;
-  }
-
-  .about h1 {
-    font-size: 32px;
-  }
-
-  .about p {
-    font-size: 17px;
-  }
-
-  .footer {
-    padding: 35px 30px;
-  }
-}
-
-/* CELULAR */
 @media (max-width: 768px) {
   header {
     padding: 20px;
@@ -197,7 +155,7 @@ nav a:hover {
     flex-direction: column;
     text-align: center;
     padding: 30px 20px;
-    margin-top: 0;
+    margin-top: auto;
   }
 
   .footer-section-1,
